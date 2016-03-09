@@ -17,7 +17,7 @@ build:
   #  - docker build -t=shippabledocker/shiphitchcock1_sample_node2_bb .
 
   pre_ci_boot:
-    image_name: varshaarun/sample_node
+    image_name: shiphitchcock1/shiphitchcock1_sample_node
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -27,7 +27,7 @@ build:
     - ls -al
 
   post_ci:
-    - docker push varshaarun/sample_node
+    - docker push shiphitchcock1/shiphitchcock1_sample_node
 
 integrations:
   hub:
